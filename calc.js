@@ -17,7 +17,7 @@ function random(min, max) {
 
 
 function getData(){
-  let chance = document.querySelectorAll('input')[0].value;
+  let chance = document.querySelectorAll('input')[0].value/100;
   let opens = document.querySelectorAll('input')[1].value;
   let people = document.querySelectorAll('input')[3].value;
   
