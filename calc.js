@@ -22,13 +22,13 @@ function getData(){
   let people = Math.floor(document.querySelectorAll('input')[3].value);
   
   let numbersPulled = [];
-	let amtOfNums = Math.floor(1 / chance);
-	let target = Math.floor(random(1, amtOfNums));
-	let totalHit = 0;
-	let timesHit = 0;
-	let achieved = false;
+  let amtOfNums = Math.floor(1 / chance);
+  let target = Math.floor(random(1, amtOfNums));
+  let totalHit = 0;
+  let timesHit = 0;
+  let achieved = false;
 
-	let mathChance = (1 - Math.pow((1 - chance), opens))*100;
+  let mathChance = (1 - Math.pow((1 - chance), opens))*100;
 
   if(sim){
       for(let person = 0; person < people; person ++){
