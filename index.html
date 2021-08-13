@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>AFS Calculator</title>
   </head>
+
   <body>
-    <h3 id = "math"></h3>
-    <h3 id = "sim"></h3>
-    <h3 id = "total"></h3>
+    <label for="probability">Probability (%):</label>
+    <input type="number" name="probability"><br>
+    <label for="opens">Opens (Integer):</label>
+    <input type="number" name="probability"><br>
+
+    <div>
+      Simulation On/Off:
+      <label class="switch">
+        <input type="checkbox" onclick="peopleToggle()">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div id="people">
+      <label for="people">People (Integer):</label>
+      <input type="number" name="people"><br>
+    </div>
+
+
+    <button onclick="getData()">Submit</button>
+    <h3 id="math"></h3>
+    <h3 id="sim"></h3>
+    <h3 id="total"></h3>
+
   </body>
-  <script src="calc.js"></script>
+
 </html>
