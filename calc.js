@@ -18,8 +18,8 @@ function random(min, max) {
 
 function getData(){
   let chance = Math.abs(document.querySelectorAll('input')[0].value)/100;
-  let opens = Math.floor(document.querySelectorAll('input')[1].value);
-  let people = Math.floor(document.querySelectorAll('input')[3].value);
+  let opens = Math.abs(Math.floor(document.querySelectorAll('input')[1].value));
+  let people = Math.abs(Math.floor(document.querySelectorAll('input')[3].value));
   
   let numbersPulled = [];
   let amtOfNums = Math.floor(1 / chance);
