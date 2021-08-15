@@ -60,7 +60,7 @@ function getData(){
   
   if(sim){
     document.getElementById('sim').innerHTML = "Simulated Probability: " + simChance.toFixed(3) + "%";
-    document.getElementById('total').innerHTML = "Total Times  Hit: " + timesHit;
+    document.getElementById('total').innerHTML = "Average Per Person: " + timesHit/people;
   }
 }
 
