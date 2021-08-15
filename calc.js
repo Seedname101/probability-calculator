@@ -34,11 +34,11 @@ function getData(){
       for(let person = 0; person < people; person ++){
 
           for(let i = 0; i < opens; i ++){
-              numbersPulled.push(Math.floor(random(1, amtOfNums)));
+              numbersPulled.push(random(1, amtOfNums));
           }
 
 
-          for(let i = 0; i < amtOfNums; i++){
+          for(let i = 0; i < opens; i++){
               if(numbersPulled[i] == target){
                   timesHit ++;
                   achieved = true;
