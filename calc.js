@@ -27,6 +27,8 @@ function getData(){
   let totalHit = 0;
   let timesHit = 0;
 
+  let hit = false;
+	
   let mathChance = (1 - Math.pow((1 - chance), opens))*100;
 
   if(sim){
@@ -40,15 +42,15 @@ function getData(){
           for(let i = 0; i < opens; i++){
               if(numbersPulled[i] == target){
                   timesHit ++;
+		  hit = true;
               }
           }
 	  
-	  let timesHitIteration = timesHit;
-          if(timesHitIteration > 1){
+          if(hit){
               totalHit ++;
           }
 	  
-	  timesHitIteration = 0;
+	  hit = false;
           numbersPulled = [];
 
       }
