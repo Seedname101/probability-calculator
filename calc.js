@@ -26,7 +26,6 @@ function getData(){
   let target = Math.floor(random(1, amtOfNums));
   let totalHit = 0;
   let timesHit = 0;
-  let achieved = false;
 
   let mathChance = (1 - Math.pow((1 - chance), opens))*100;
 
@@ -41,16 +40,14 @@ function getData(){
           for(let i = 0; i < opens; i++){
               if(numbersPulled[i] == target){
                   timesHit ++;
-                  achieved = true;
               }
           }
 
-          if(achieved){
+          if(timesHit > 1){
               totalHit ++;
           }
 
           numbersPulled = [];
-          achieved = false;
 
       }
   } 
