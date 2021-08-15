@@ -23,7 +23,7 @@ function getData(){
   
   let numbersPulled = [];
   let amtOfNums = Math.floor(1 / chance);
-  let target = Math.floor(random(1, amtOfNums));
+  let target = random(1, amtOfNums);
   let totalHit = 0;
   let timesHit = 0;
 
