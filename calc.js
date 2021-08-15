@@ -42,11 +42,13 @@ function getData(){
                   timesHit ++;
               }
           }
-
-          if(timesHit > 1){
+	  
+	  let timesHitIteration = timesHit;
+          if(timesHitIteration > 1){
               totalHit ++;
           }
-
+	  
+	  timesHitIteration = 0;
           numbersPulled = [];
 
       }
