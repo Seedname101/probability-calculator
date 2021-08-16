@@ -5,10 +5,16 @@
     <title>AFS Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
-
+  
   <body>
-    <label for="probability">Probability (%):</label>
-    <input type="number" name="probability"><br>
+    
+    <div class="form__group field">
+    <input type="number" class="form__field" placeholder="Probability (%)" name="probability" id='name' required />
+    <label for="probability" class="form__label">Probability (%)</label>
+    </div>
+    
+<!--     <label for="probability">Probability (%):</label>
+    <input type="number" name="probability"><br> -->
     <label for="opens">Opens (Integer):</label>
     <input type="number" name="probability"><br>
 
@@ -24,7 +30,7 @@
       <label for="people">People (Integer):</label>
       <input type="number" name="people"><br>
     </div>
-
+    
 
     <button onclick="getData()">Submit</button>
     <h3 id="math"></h3>
